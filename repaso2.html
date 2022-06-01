@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @import url("reste.css"); */
+        li{
+            list-style-type: none;
+        }
+        li::after{
+            content: " \1F600";
+        }
+        li:nth-last-child(-n+3){
+            text-transform: capitalize;
+            text-decoration: line-through;
+        }
+        li:nth-child(-n+3){
+            text-decoration: line-through;
+        }
+        /*odd even o 2n+1*/
+        li:nth-child(odd){
+            color: green;
+        }
+        li:nth-child(2n){
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <span>&#x1F608</span> texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+        <li>texto</li>
+    </ul>
+</body>
+</html>
