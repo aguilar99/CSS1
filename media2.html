@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        img{
+            object-fit: cover;
+            border-radius: 2vmax;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @media (max-width:600px) {
+            main{
+                flex-direction: column;
+            }
+            img{
+                width: 90%;
+                margin-top: 1vh;
+            }
+            body{
+                background-color: orange;
+            }
+        }
+        @media (max-width:200px) {
+            main{
+                flex-direction: column;
+            }
+            img{
+                width: 90%;
+                margin-top: 1vh;
+            }
+            body{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <img src="https://picsum.photos/800/400" alt="img picsum" width="200" height="200">
+        <img src="https://picsum.photos/200" alt="img picsum" width="200" height="200">
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

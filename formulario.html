@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, *:before, *:after {
+        box-sizing: border-box;
+        }
+        div{
+            border: 2px solid salmon;
+        }
+        div{
+            width: 60vw;
+            margin: 0 auto;
+        }
+        legend{
+            outline: 1px dotted green;
+            outline-offset: 0.2rem;
+        }
+        fieldset{
+            border-style: double;
+            border-color: chartreuse;
+            border-width: 2px;
+            border-radius: 10px;
+        }        
+        button{
+            background-color: aliceblue;
+            width: 100%;
+        }
+        .formcontrol{
+            margin-bottom: 1rem;
+        }
+        label{display: block;}
+        input{width: 100%;}
+        fieldset:nth-child(2) input{
+            margin-bottom: 1rem;
+        }
+        button{
+            margin-top: 1rem;
+        }
+        body{
+            background-image: url("img.jpg");
+            background-repeat: ;
+        }
+        .fondo{
+            z-index: ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="externo">
+    <form id="form">
+        <fieldset>
+            <legend>Datos vehículo</legend>
+            <div class="formcontrol">
+            <label>Matrícula</label>
+            <input type="text" pattern="([0-9]{4}[-]?[bcdfghjklmnprstvwyz])|(ninguna)">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="url">URL</label>
+            <input type="text" id="url" name="url">
+        </fieldset>
+    </form>
+    <button type="submit" form="form">Enviar</button>
+    </div>
+</body>
+</html>
