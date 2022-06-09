@@ -7,11 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <style>
+        main > div{
+            width: 40%;
+            border: 1px dotted salmon;
+            height: 80%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
         img{
             object-fit: cover;
             border-radius: 2vmax;
         }
         main{
+            height: 80vh;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -19,6 +30,7 @@
         @media (max-width:600px) {
             main{
                 flex-direction: column;
+                align-items: center;
             }
             img{
                 width: 90%;
@@ -45,8 +57,14 @@
 <body>
     <header></header>
     <main>
+        <div>
         <img src="https://picsum.photos/800/400" alt="img picsum" width="200" height="200">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam tempore similique perferendis ab eius praesentium omnis, a molestiae corporis quasi! Deleniti sequi, voluptatum esse doloribus maxime voluptas cumque quos tempore!</p>
+    </div>
+    <div>
         <img src="https://picsum.photos/200" alt="img picsum" width="200" height="200">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis dolorum ut porro soluta quis non voluptates voluptatibus consectetur voluptas officia aliquam quia, a placeat alias sint nam dolorem quod.</p>
+    </div>
     </main>
     <footer>
 

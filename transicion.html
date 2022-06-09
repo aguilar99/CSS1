@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transicion</title>
+    <style>
+        :root {
+            --fondo: blue;
+            --fondofinal: red;
+        }
+        div {
+            position: fixed;
+            top: 10vw;
+            left: 10vh;
+            width: 25vw;
+            height: 25vh;
+            border-width: 1px;
+            border-color: var(--fondo);
+            border-style: dotted;
+            /*transition: width 2s, heigth 10s;*/
+            transition: all 2s;
+            
+        }
+        /*div:hover{
+            width: 50vw;
+            height: 50vh;
+            background-color: var(--fondofinal);
+        }*/
+        div:active{
+            transform: rotate(45deg);
+            letter-spacing: 1rem;
+        }
+        h1{
+            position: fixed;
+            left: 0;
+            animation: example 5s linear 2s infinite alternate;
+        }
+        @keyframes example {
+        from {left:0;}
+        to {left:100vw;}
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1>Hola</h1></header>
+    <div>
+        Antonio
+    </div>
+</body>
+</html>
